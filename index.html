@@ -1,11 +1,15 @@
-<style>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NORMA ESTUDIO</title>
 
-html,
-body{
+<style>
+html, body{
     margin:0;
     width:100%;
-    height:100%;
-    overflow:hidden;
+    min-height:100%;
     background:#efefef;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -14,39 +18,50 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+    min-height:100vh;
 }
 
 .contenedor{
     width:100vw;
     height:100vh;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
 }
 
 video{
-    width:auto;
-    height:100vh;
     max-width:100vw;
-    max-height:100vh;
+    max-height:92vh;
+    width:auto;
+    height:auto;
     object-fit:contain;
+    display:block;
 }
 
-a{
+.correo{
     position:fixed;
-    bottom:20px;
+    bottom:18px;
     left:50%;
     transform:translateX(-50%);
     text-decoration:none;
     color:#000;
     font-size:14px;
-    opacity:.55;
-    margin-top:0;
+    opacity:.6;
 }
-
-a:hover{
-    opacity:1;
-}
-
 </style>
+</head>
+
+<body>
+
+<div class="contenedor">
+    <video autoplay muted loop playsinline controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+</div>
+
+<a class="correo" href="mailto:andres.asenjo@cabeza.cl">
+    andres.asenjo@cabeza.cl
+</a>
+
+</body>
+</html>
